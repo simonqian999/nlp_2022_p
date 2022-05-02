@@ -1,0 +1,6 @@
+*.json
+
+*.zip
+
+
+/__pycache__
