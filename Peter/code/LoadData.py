@@ -38,7 +38,7 @@ class LoadDataAndProcessing():
             for single_tweet_data in tweet_group_data[1:]:
                 
                 # check if the reply also comes from the source author
-                # if so, add to the source
+                # if so, add to the source based on similarity
                 if single_tweet_data['user']['id'] == tweet_group_data[0]['user']['id']:
                     text_sim = difflib.SequenceMatcher(None, self.textProcess(tweet_group_data[0]['text']), 
                                                       self.textProcess(single_tweet_data['text'])).quick_ratio()
