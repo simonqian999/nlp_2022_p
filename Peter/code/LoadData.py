@@ -40,16 +40,15 @@ class LoadDataAndProcessing():
                 # check if the reply also comes from the source author
                 # if so, add to the source based on similarity
                 if single_tweet_data['user']['id'] == tweet_group_data[0]['user']['id']:
-#                     text_sim = difflib.SequenceMatcher(None, self.textProcess(tweet_group_data[0]['text']), 
-#                                                       self.textProcess(single_tweet_data['text'])).quick_ratio()
-#                     if text_sim < 0.7:
-                    temp_source += ' ' + single_tweet_data['text']
+                    text_sim = difflib.SequenceMatcher(None, self.textProcess(tweet_group_data[0]['text']), 
+                                                      self.textProcess(single_tweet_data['text'])).quick_ratio()
+                    if text_sim < 0.9:
+                        temp_source += ' ' + self.textProcess(single_tweet_data['text'])
                 else: 
                     if single_tweet_data['in_reply_to_status_id'] != None:
                         single_reply = self.textProcess(single_tweet_data['text'])
-#                         if first_tweet in single_reply:
-#                             single_reply = single_reply.replace(first_tweet, "")
-#                         single_reply = re.sub(r'@[^ ]+', ' ', single_reply) # replace mention in replies
+                        if first_tweet in single_reply:
+                            single_reply = single_reply.replace(first_tweet, "")
                         temp_reply.append(single_reply)
                     
             # add username and user description as data of source
