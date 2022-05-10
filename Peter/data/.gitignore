@@ -1,11 +1,3 @@
 *.json
 
-*.zip
-
 /archived
-
-/covid_data
-
-/train.data
-
-/dev_data
