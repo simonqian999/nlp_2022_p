@@ -10,8 +10,8 @@ Use your trained rumour classifier from task 1 and apply it to unlabelled COVID-
 ##### Group Members:
 
 - Chenyang Dong (Student ID: 1074314)
-- 
-- 
+- Yue Fei (Student ID: 980377)
+- Xinwei Qian (Student ID: 1068271)
 
 ##### Directory Structure
 ```
@@ -26,12 +26,12 @@ Peter
 │   │	Preprocessing.ipynb
 │   │	Prepare Dataset on Local.ipynb
 │   │	Check Devset Prediction.ipynb
+│   │	Bert.ipynb
 │   │	Covid Analysis.ipynb
 │   │	LoadData.py
 │   │	RumourDataset.py
 │   │	eval.py
 │   └─── deprecated
-│       │   Bert.ipynb
 │       │   Split File.ipynb
 │   
 └─── data
@@ -64,13 +64,9 @@ Peter
 │       │   covid_input.pickle
 │   
 └───output 
-    │   Accuracy.png
-    │   Loss.png
-    │   F1.png
     │   Parameters.txt
     │   test_prediction.csv
     │   dev_prediction.csv
-    │   dev_performance.txt
     │   covid_prediction.csv
 
 ```

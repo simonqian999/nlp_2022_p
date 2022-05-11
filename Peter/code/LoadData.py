@@ -12,9 +12,9 @@ class LoadDataAndProcessing():
         text = re.sub(r'(https|http)?:\/\/(\w|\.|\/|\?|\=|\&|\%)*\b', " ", text)  # remove URL
         text = text.lower() # lowercase the text
 #         text = re.sub(r'@[^ ]+', ' ', text) # replace mention
-        # text = re.sub(r'#', '', text) # remove hashtag
+#         text = re.sub(r'#', '', text) # remove hashtag
         text = re.sub(r'([a-z])\1{2,}', r'\1', text) # character normalization
-        text = re.sub(r'[^a-z#@0-9 ]', ' ', text) # remove non-letter characters
+        text = re.sub(r'[^a-z0-9 ]', ' ', text) # remove non alphanumeric character characters
         
         stop_words = set(stopwords.words('english'))
         text_without_sw = [word for word in text.split() if not word in stop_words]

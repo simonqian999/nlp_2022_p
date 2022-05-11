@@ -2,6 +2,9 @@
 > If you want to reuse the code, please follow the order and instructions. 
 >> Most of notebooks are labelled with sections clearly, please check and follow the sections.
 
+### BertForSequence.ipynb
+- Use this notebook for modelling (train, evaluation, test) using bert for sequence classification. ***This is the most important notebook!!!***
+- When use this notebook in Colab, make sure you upload two python file below ('LoadData.py' and 'RumourDataset.py') in session and also you have the same Google Drive directory and needed files put in (files end with 'prepared' or input pickle file and "valid.label" file).
 ### Get Tweets.ipynb
 - Use this notebook to crawl the tweets.
 - Please make sure your crawled data naming with '_all' after (eg. train_data_all.json).
@@ -18,9 +21,9 @@
 - Contain a class to load and process on the input (mainly on text and choice).
 ### RumourDataset.py
 - Contain a class to prepare the dataset format for model to use.
-### BertForSequence.ipynb
-- Use this notebook for modelling (train, evaluation, test).
-- When use this notebook in Colab, make sure you upload two python file above in session and also you have the same Google Drive directory and needed files put in (files end with 'prepared' or input pickle file and "valid.label" file).
+### Bert.ipynb
+- Use this notebook for compared modelling with none fine-tune bert.
+- Also remember to put needed files in the right directory.
 ### Check Devset Prediction.ipynb
 - Use this notebook to check the prediction performance on devset (double check afterwards as it's already done in BertForSequence.ipynb with a good pipeline).
 ### Covid Analysis.ipynb
