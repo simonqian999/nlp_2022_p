@@ -24,7 +24,11 @@
 ### Bert.ipynb
 - Use this notebook for compared modelling with none fine-tune bert.
 - Also remember to put needed files in the right directory.
+### MLP+SVM.ipynb
+- Use this notebook for other modelling methods.
 ### Check Devset Prediction.ipynb
 - Use this notebook to check the prediction performance on devset (double check afterwards as it's already done in BertForSequence.ipynb with a good pipeline).
-### Covid Analysis.ipynb
-- Use this notebook to check the analysis on covid data for task 2.
+### Covid Analysis(Hashtag).ipynb
+- Use this notebook to check the analysis on hashtag of covid data for task 2.
+### Covid Analysis(Topic,Sentiment)
+- Use this notebook to check the analysis on topic and sentiment of covid data for task 2.

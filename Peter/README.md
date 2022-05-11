@@ -15,7 +15,7 @@ Use your trained rumour classifier from task 1 and apply it to unlabelled COVID-
 
 ##### Directory Structure
 ```
-Peter
+Rumour Detection and Analysis on Twitter
 │   README.md
 │
 └─── code
@@ -27,7 +27,9 @@ Peter
 │   │	Prepare Dataset on Local.ipynb
 │   │	Check Devset Prediction.ipynb
 │   │	Bert.ipynb
-│   │	Covid Analysis.ipynb
+│   │	MLP+SVM.ipynb
+│   │	Covid Analysis (Hashtag).ipynb
+│   │	Covid Analysis (Topic,Sentiment).ipynb
 │   │	LoadData.py
 │   │	RumourDataset.py
 │   │	eval.py
@@ -63,10 +65,13 @@ Peter
 │       │   dev_to_predict_input.pickle
 │       │   covid_input.pickle
 │   
-└───output 
+└─── output 
     │   Parameters.txt
     │   test_prediction.csv
     │   dev_prediction.csv
     │   covid_prediction.csv
+│   │
+└─── plot
+    │   ...
 
 ```
